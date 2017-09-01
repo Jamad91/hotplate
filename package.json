@@ -11,20 +11,24 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamad91/boilerplate.git"
+    "url": "git+https://github.com/jamad91/hotplate.git"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
+    "chalk": "^2.1.0",
     "express": "^4.15.4",
     "morgan": "^1.8.2",
     "nodemon": "^1.11.0",
+    "pg": "^7.2.0",
+    "pg-hstore": "^2.3.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "sequelize": "^4.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

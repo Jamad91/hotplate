@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const chalk = require('chalk');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 3000; // this can be very useful if you deploy to Heroku!
+const db = require('./db');
 
 
 app.use(morgan('dev'));
@@ -26,8 +27,11 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500).send(err.message || 'Internal server error.');
 });
 
-app.listen(port, function () {
-  console.log("Knock, knock");
-  console.log("Who's there?");
-  console.log(`Your server, listening on port ${port}`);
-});
+db.sync()
+  .then(() => {
+    console.log(chalk.blue('database is all synced up'));
+    app.listen(port, err => {
+      if(err) {throw err}
+      console.log(chalk.green(`Server is on port ${port}. Check it out!`));
+    })
+  })
