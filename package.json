@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "hotplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,8 +7,12 @@
     "start": "node server",
     "start-dev": "webpack -w &amp; nodemon server/index.js"
   },
-  "author": "",
+  "author": "Jimmy DiColandrea",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queerviolet/bones.git"
+  },
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
