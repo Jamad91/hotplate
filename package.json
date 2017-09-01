@@ -11,7 +11,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/queerviolet/bones.git"
+    "url": "git+https://github.com/jamad91/boilerplate.git"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
